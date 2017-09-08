@@ -1,0 +1,58 @@
+# depslib dependency file v1.0
+1504665130 source:d:\laboratorio1\tp-1-lab\tp_1_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+	"funciones.h"
+
+1457052376 d:\laboratorio1\tp-1-lab\tp_1_cascara\funciones.h
+
+1504797436 source:e:\laboratorio1\tp-1-lab\tp_1_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+	"funciones.h"
+
+1504797488 e:\laboratorio1\tp-1-lab\tp_1_cascara\funciones.h
+
+1504797608 source:e:\laboratorio1\tp-1-lab\tp_1_cascara\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+	"funciones.h"
+
+1504844738 source:d:\laboratorio1\nueva carpeta\tp_1_cascara\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+	"funciones.h"
+
+1504844738 d:\laboratorio1\nueva carpeta\tp_1_cascara\funciones.h
+
+1504844738 source:d:\laboratorio1\nueva carpeta\tp_1_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+	"funciones.h"
+
+1504878512 source:e:\laboratorio1\nueva carpeta\tp_1_cascara\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+	"funciones.h"
+
+1504844738 e:\laboratorio1\nueva carpeta\tp_1_cascara\funciones.h
+
+1504872008 source:e:\laboratorio1\nueva carpeta\tp_1_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+	"funciones.h"
+
