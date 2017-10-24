@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1508809720 source:d:\laboratorio1\nueva carpeta (3)\tp_3_cascara\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+	<string.h>
+	"funciones.h"
+
+1508809732 d:\laboratorio1\nueva carpeta (3)\tp_3_cascara\funciones.h
+
+1508809706 source:d:\laboratorio1\nueva carpeta (3)\tp_3_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+	<string.h>
+	"funciones.h"
+
