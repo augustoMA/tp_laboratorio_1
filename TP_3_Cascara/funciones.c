@@ -119,14 +119,14 @@ void agregarPelicula(EMovie *peliculas,int contPeliculas,int* puntero)
     fflush(stdin);
     gets(auxTitulo);
 
-    valCadena(auxTitulo, 49); //20
+    valCadena(auxTitulo, 49); 
     titulo=strlen(auxTitulo);
 
     for(i=0; i<titulo; i++)
     {
         auxTitulo[i]=toupper(auxTitulo[i]);
     }
-    for(i=0; i<contPeliculas; i++)//Se verifica que no haya un titulo igual ya ingresado
+    for(i=0; i<contPeliculas; i++)
     {
         if(strcmp(auxTitulo,(peliculas+i)->titulo)==0 && (peliculas+i)->duracion!=0)
         {
@@ -134,14 +134,14 @@ void agregarPelicula(EMovie *peliculas,int contPeliculas,int* puntero)
             break;
         }
     }
-    if(!existe)//si existe==0 entonces entra
+    if(!existe)
     {
         strcpy((peliculas+lugar)->titulo,auxTitulo);
 
         printf("Ingrese el genero: ");
         fflush(stdin);
         gets(auxGenero);
-        valCadena(auxGenero, 49);//20
+        valCadena(auxGenero, 49);
         strcpy((peliculas+lugar)->genero,auxGenero);
 
         printf("Ingrese la duracion(en minutos): ");
@@ -153,7 +153,7 @@ void agregarPelicula(EMovie *peliculas,int contPeliculas,int* puntero)
         printf("Ingrese la descripcion: ");
         fflush(stdin);
         gets(auxDescripcion);
-        valCadena(auxDescripcion, 99); //50
+        valCadena(auxDescripcion, 99); 
         strcpy((peliculas+lugar)->descripcion,auxDescripcion);
 
         printf("Ingrese el puntaje: ");
@@ -196,16 +196,16 @@ void borrarPelicula(EMovie *peliculas, int contPeliculas)
     printf("Ingrese el titulo de la pelicula a eliminar: ");
     fflush(stdin);
     gets(auxtitulo);
-    valCadena(auxtitulo, 49);//20
+    valCadena(auxtitulo, 49);
     titulo=strlen(auxtitulo);
 
     for(i=0; i<titulo; i++)
     {
-        auxtitulo[i]= toupper(auxtitulo[i]); //auxtitulo()titulo
+        auxtitulo[i]= toupper(auxtitulo[i]);
     }
     for(i=0; i<contPeliculas; i++)
     {
-        if(strcmp(auxtitulo,(peliculas+i)->titulo)==0 && (peliculas+i)->duracion!=0) //auxtitulo(titulo)
+        if(strcmp(auxtitulo,(peliculas+i)->titulo)==0 && (peliculas+i)->duracion!=0) 
         {
             printf("Pelicula a eliminar:\n");
 
@@ -261,7 +261,7 @@ void modificarPelicula(EMovie *peliculas, int contPeliculas)
     printf("Ingrese la pelicula a modificar: ");
     fflush(stdin);
     gets(auxTitulo);
-    valCadena(auxTitulo, 49);//20
+    valCadena(auxTitulo, 49);
     titulo=strlen(auxTitulo);
 
     for(i=0; i<titulo; i++)
@@ -285,11 +285,11 @@ void modificarPelicula(EMovie *peliculas, int contPeliculas)
             case 1:
                 printf("Ingrese el titulo: ");
                 fflush(stdin);
-                gets(auxTitulo); //scanf
-                valCadena(auxTitulo, 49); //20
+                gets(auxTitulo); 
+                valCadena(auxTitulo, 49); 
                 titulo=strlen(auxTitulo);
 
-                for(i=0; i<titulo; i++) //Se verifica que no haya un titulo igual ya ingresado
+                for(i=0; i<titulo; i++) 
                 {
                     auxTitulo[i]=toupper(auxTitulo[i]);
                 }
@@ -301,7 +301,7 @@ void modificarPelicula(EMovie *peliculas, int contPeliculas)
                         break;
                     }
                 }
-                if(!existe)//si existe==0 entonces entra
+                if(!existe)
                 {
                     strcpy((peliculas+lugar)->titulo,auxTitulo);
                     printf("Titulo modificado.\n");
@@ -317,7 +317,7 @@ void modificarPelicula(EMovie *peliculas, int contPeliculas)
                 printf("Ingrese el genero: ");
                 fflush(stdin);
                 gets(auxGenero);
-                valCadena(auxGenero, 49); //20
+                valCadena(auxGenero, 49); 
                 strcpy((peliculas+lugar)->genero,auxGenero);
                 printf("\nGenero modificado.\n");
                 system("pause");
@@ -337,7 +337,7 @@ void modificarPelicula(EMovie *peliculas, int contPeliculas)
                 printf("Ingrese la descripcion: ");
                 fflush(stdin);
                 gets(auxDescripcion);
-                valCadena(auxDescripcion, 99);//50
+                valCadena(auxDescripcion, 99);/
                 strcpy((peliculas+lugar)->descripcion,auxDescripcion);
                 printf("\nDescripcion modificada.\n");
                 system("pause");
@@ -357,7 +357,7 @@ void modificarPelicula(EMovie *peliculas, int contPeliculas)
                 printf("Ingrese el link de la imagen: ");
                 fflush(stdin);
                 gets(linkImagen);
-                valCadena(linkImagen, 199);//50
+                valCadena(linkImagen, 199);
                 strcpy((peliculas+lugar)->linkImagen, linkImagen);
                 printf("\nLink modificado.\n");
                 system("pause");
